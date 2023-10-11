@@ -11,7 +11,7 @@ export default function Board({score, highScore, setScore, setHighScore}) {
     }, []);
 
     const generateCards = () => {
-        fetch('http://api.giphy.com/v1/gifs/search?q=cats&api_key=u6P77H4ue0rpTU0erPB5dOx4k7Dfc1Zg&limit=9')
+        fetch('https://api.giphy.com/v1/gifs/search?q=cats&api_key=u6P77H4ue0rpTU0erPB5dOx4k7Dfc1Zg&limit=9')
         .then(response => response.json())
         .then((data) => {
           const imagesData = [];
